@@ -1,21 +1,32 @@
 # Predicting Movie Ratings
 
-## OBJECTIVE
+## Objective
 Build models to predict the rating for any film in the IMDB database, given a set of data representing the film's characteristics. Create a series of supervised machine-learning models, and evaluate each model's performance using RMSE and R-Squared measures.
 
-## METHODS
+## Methods
 Clean and prepare the data for modeling, splitting the data into 3 sets (Train, Validate and Test). Explore relationships between variables to find the best drivers of movie ratings. Use these drivers to create various models to predict film ratings. These models were then evaluated against a baseline to determine their performance. 
 
-## RESULTS
-Compare the RMSE and R-Squared values, such that the best-performing model will exhibit the highest R-Squared and lowest RSME values. In this analysis, the optimal model was <>, with an RMSE of <> and an R-Squared of <>. This outperformed the other models as well as the baseline RMSE and R-Squared, which were <> and <> respectively.
+## Results
+Compare the RMSE and R-Squared values, such that the best-performing model will exhibit the highest R-Squared and lowest RSME values. In this analysis, the optimal model was the OLS Linear Regression Model, with an RMSE of 4.153175e-15 (essentially 0) and an R-Squared of 1. This outperformed the other models as well as the baseline RMSE and R-Squared, which were 0.34 and 0, respectively.
 
-## CONCLUSIONS & NEXT STEPS
-The selected drivers were <effective/ineffective> in predicting a movie's ratings.
+## Conclusions & Next Steps
+According to the analysis, the best-performing model made use of OLS Linear Regression, and beat the baseline RMSE and R-Squared values.
 
-## TO REPRODUCE THIS PROJECT
+The model depended on drivers such as Ranking, Year, Date, Runtime, Score, Votes and Gross Value, which proved effective in predicting a movie's ratings.
+
+With more time, we could remove outliers and evaluate the impact on model performance as well as try scaling methods.
+
+## Reproducing this Report
 - Download the dataset from [here](https://www.kaggle.com/mustafacicek/imdb-top-250-lists-1996-2020)
 - Import the acquire, prepare and explore scripts
-- Work through the steps in this notebook
+- Work through the steps in the [notebook](https://github.com/mariamnaqvi/predicting-movie-ratings/blob/main/final_report_imdb_ratings.ipynb)
+
+## Initial Hypotheses
+*Hypotheses 1:* I rejected the null hypotheses; movies with runtimes lower than 150mins have lower ratings.
+* Confidence level = 0.95 
+* Alpha = 1 - Confidence level = 0.05
+* H<sub>0</sub>: Mean rating for movies with runtime less than 150mins is equivalent to those with more than 150mins runtime
+* H<sub>1</sub>: Mean rating for movies with runtime less than 150mins is lower than those with more than 150mins runtime
 
 ## Data Dictionary
 Name | Datatype | Definition | Possible Values 
