@@ -1,4 +1,4 @@
-# predicting-movie-ratings
+# Predicting Movie Ratings
 
 ## OBJECTIVE
 Build models to predict the rating for any film in the IMDB database, given a set of data representing the film's characteristics. Create a series of supervised machine-learning models, and evaluate each model's performance using RMSE and R-Squared measures.
