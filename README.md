@@ -9,8 +9,13 @@ Clean and prepare the data for modeling, splitting the data into 3 sets (Train, 
 ## RESULTS
 Compare the RMSE and R-Squared values, such that the best-performing model will exhibit the highest R-Squared and lowest RSME values. In this analysis, the optimal model was <>, with an RMSE of <> and an R-Squared of <>. This outperformed the other models as well as the baseline RMSE and R-Squared, which were <> and <> respectively.
 
-## CONCLUSIONS
+## CONCLUSIONS & NEXT STEPS
 The selected drivers were <effective/ineffective> in predicting a movie's ratings.
+
+## TO REPRODUCE THIS PROJECT
+- Download the dataset from [here](https://www.kaggle.com/mustafacicek/imdb-top-250-lists-1996-2020)
+- Import the acquire, prepare and explore scripts
+- Work through the steps in this notebook
 
 ## Data Dictionary
 Name | Datatype | Definition | Possible Values 
